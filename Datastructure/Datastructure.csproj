@@ -66,6 +66,7 @@ set.GetKeysByCreatedTime(); // keys ordered by insertion time
     <PackageProjectUrl>https://github.com/engmustafak26/Datastructure</PackageProjectUrl>
     <RepositoryUrl>https://github.com/engmustafak26/Datastructure</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <PackageId>AdvancedDataStructure</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
