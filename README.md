@@ -14,7 +14,7 @@ A small .NET library of custom collection types.
 ### Install
 
 ```bash
-dotnet add package Datastructure
+dotnet add package AdvancedDataStructure
 ```
 
 ### Example
