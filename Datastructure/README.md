@@ -1,20 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <Nullable>enable</Nullable>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageIcon>icon.png</PackageIcon>
-    <Title>AdvancedDataStructure</Title>
-    <Description># Datastructure
+# Datastructure
 
 A small .NET library of custom collection types.
 
-## `CircularHashSet&lt;T&gt;`
+## `CircularHashSet<T>`
 
-`CircularHashSet&lt;T&gt;` is a fixed-capacity set backed by a dictionary. When the set is full, adding a new key evicts the oldest entry in insertion order and inserts the new key.
+`CircularHashSet<T>` is a fixed-capacity set backed by a dictionary. When the set is full, adding a new key evicts the oldest entry in insertion order and inserts the new key.
 
 - **Fixed capacity** — size is set at construction and does not grow.
 - **Insertion-order eviction** — the oldest key is removed when capacity is exceeded.
@@ -32,7 +22,7 @@ dotnet add package Datastructure
 ```csharp
 using Datastructure;
 
-var set = new CircularHashSet&lt;string&gt;(3);
+var set = new CircularHashSet<string>(3);
 
 set.TryAdd("a"); // true
 set.TryAdd("b"); // true
@@ -62,15 +52,3 @@ set.GetKeysByCreatedTime(); // keys ordered by insertion time
 ## Requirements
 
 - .NET Standard 2.0 (compatible with .NET Framework 4.6.1+, .NET Core 2.0+, and .NET 5+)
-</Description>
-    <PackageProjectUrl>https://github.com/engmustafak26/Datastructure</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/engmustafak26/Datastructure</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="\" />
-    <None Include="icon.png" Pack="true" PackagePath="\" />
-  </ItemGroup>
-
-</Project>
